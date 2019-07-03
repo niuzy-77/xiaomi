@@ -1917,19 +1917,28 @@ input::-webkit-input-placeholder{
     background-color: rgba(66,66,66,0.2);
     color:#fff;
 }
-.content1 .control-prev:hover{
+.main-box9-bottom1 .content1 .control-prev:hover{
     background-color: #757575;
 }
-.content2 .control-prev:hover{
+.main-box9-bottom2 .content2 .control-prev:hover{
     background-color: #757575;
 }
-.content3 .control-prev:hover{
+.main-box9-bottom2 .content3 .control-prev:hover{
     background-color: #757575;
 }
-.content4 .control-prev:hover{
+.main-box9-bottom2 .content4 .control-prev:hover{
     background-color: #757575;
 }
-.control-next:hover{
+.main-box9-bottom1 .content1 .control-next:hover{
+    background-color: #757575;
+}
+.main-box9-bottom2 .content2 .control-next:hover{
+    background-color: #757575;
+}
+.main-box9-bottom2 .content3 .control-next:hover{
+    background-color: #757575;
+}
+.main-box9-bottom2 .content4 .control-next:hover{
     background-color: #757575;
 }
 .content-point{
