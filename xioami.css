@@ -82,10 +82,10 @@ a{
 .header-right2:hover{
     background-color:#fff;
 }
-.header-right2 a:hover{
+.header-right2:hover a{
     color:#ff6700;
 }
-.header-right2 i:hover{
+.header-right2:hover i{
     color:#ff6700;
 }
 .header-right2 .icon-gouwuchekong{
@@ -151,7 +151,7 @@ a{
     box-sizing: border-box;
     float:right;
 }
-.site-box2:hover input,.search{
+.site-box2:hover input{
     border-color:#b0b0b0;
 }
 .site-box2:hover .search{
@@ -166,9 +166,15 @@ a{
     font-size: 14px;
     line-height: 48px;
 }
-input:focus{
+.site-box2 input:focus {
     outline:none;
     border-color:#ff6700;
+}
+input::-webkit-input-placeholder{
+    margin-left: 5px;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #757575;
 }
 .search{
     width:38px;
@@ -179,15 +185,16 @@ input:focus{
     position: relative;
 }
 .search .icon-sousuo{
-    font-size: 24px;
+    font-size: 20px;
     line-height: 46px;
     color: #616161;
     position: absolute;
     top:0;
-    left:11px;
+    left:50%;
+    margin-left:-10px;
     cursor: pointer;
 }
-.search:hover{
+.site-box2 .search:hover{
     border-color: #ff6700;
     background-color: #ff6700;
 }
@@ -512,6 +519,32 @@ input:focus{
     text-align: center;
     line-height: 21px;
 }
+.mobile-flag-new{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #83c44e;
+}
+.mobile-flag-saleoff{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 64px;
+    height: 20px;
+    margin-left: -32px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #e53935;
+}
 .brick{
     width:1226px;
     height:120px;
@@ -559,7 +592,9 @@ input:focus{
     font-weight: 400;
     text-align: center;
     line-height: 21px;
+    white-space: nowrap; 
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .home-des{
     margin-bottom:10px;
@@ -568,7 +603,9 @@ input:focus{
     text-align: center;
     line-height: 18px;
     color:#b0b0b0;
+    white-space: nowrap; 
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .home-price{
     height:21px;
@@ -596,6 +633,32 @@ input:focus{
     position: absolute;
     top:300px;
     left:0; 
+}
+.home-flag-new{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #83c44e;
+}
+.home-flag-saleoff{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 64px;
+    height: 20px;
+    margin-left: -32px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #e53935;
 }
 .home:hover .home-review{
     background-color: #ff6700;
@@ -750,7 +813,9 @@ input:focus{
     font-weight: 400;
     text-align: center;
     line-height: 21px;
+    white-space: nowrap; 
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .int-des{
     margin-bottom:10px;
@@ -759,7 +824,9 @@ input:focus{
     text-align: center;
     line-height: 18px;
     color:#b0b0b0;
+    white-space: nowrap; 
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .int-price{
     height:21px;
@@ -787,6 +854,19 @@ input:focus{
     position: absolute;
     top:300px;
     left:0;
+}
+.int-flag-new{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #83c44e;
 }
 .int8,.int9{
     width: 234px;
@@ -919,7 +999,9 @@ input:focus{
     font-weight: 400;
     text-align: center;
     line-height: 21px;
+    white-space: nowrap; 
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .rank{
     height: 18px;
@@ -995,7 +1077,9 @@ input:focus{
     color:#333;
     line-height: 24px;
     margin:-10px 110px 5px 20px;
-    overflow:hidden;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .col8-price{
     height: 24px;
@@ -1088,7 +1172,9 @@ input:focus{
     font-weight: 400;
     text-align: center;
     line-height: 21px;
+    white-space: nowrap; 
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .parts-price{
     height:21px;
@@ -1122,7 +1208,20 @@ input:focus{
     padding-bottom:5px;
 }
 .parts-review-name{
-    color:#e0e0e0;
+    color: rgba(255,255,255,0.6);
+}
+.parts-flag-saleoff{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 64px;
+    height: 20px;
+    margin-left: -32px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #e53935;
 }
 .parts8:hover{
     transform:translateY(-2px);
@@ -1163,7 +1262,9 @@ input:focus{
     color:#333;
     line-height: 24px;
     margin:-10px 110px 5px 20px;
-    overflow:hidden;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .parts8-price{
     height: 24px;
@@ -1256,7 +1357,9 @@ input:focus{
     font-weight: 400;
     text-align: center;
     line-height: 21px;
+    white-space: nowrap; 
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .peri-price{
     height:21px;
@@ -1290,7 +1393,20 @@ input:focus{
     padding-bottom:5px;
 }
 .peri-review-name{
-    color:#e0e0e0;
+    color: rgba(255,255,255,0.6);
+}
+.peri-flag-new{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #83c44e;
 }
 .peri8:hover{
     transform:translateY(-2px);
@@ -1331,7 +1447,9 @@ input:focus{
     color:#333;
     line-height: 24px;
     margin:-10px 110px 5px 20px;
-    overflow:hidden;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .peri8-price{
     height: 24px;
@@ -1459,7 +1577,9 @@ input:focus{
     text-align: center;
     line-height:18px;
     margin-bottom:10px;
+    white-space: nowrap; 
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .reco-price{
     height:24px;
@@ -1539,9 +1659,12 @@ input:focus{
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    overflow: hidden;
     color:#333;
-    font-weight: 400;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .product-author{
     height: 18px;
@@ -1619,12 +1742,12 @@ input:focus{
     cursor: pointer;
 }
 .content1{
-    color: #ffac13;
     width: 296px;
     height: 374px;
     padding: 45px 0 0;
     border-top: 1px solid  #ffac13;
     float: left;
+    position: relative;
 }
 .content-title{
     width:276px;
@@ -1683,6 +1806,7 @@ input:focus{
     margin-left:14px;
     margin-bottom:14px;
     background-color: #fff;
+    position: relative;
 }
 .content2-title{
     width:276px;
@@ -1704,6 +1828,7 @@ input:focus{
     margin-left:14px;
     margin-bottom:14px;
     background-color: #fff;
+    position: relative;
 }
 .content3-title{
     width:276px;
@@ -1725,6 +1850,7 @@ input:focus{
     margin-left:14px;
     margin-bottom:14px;
     background-color: #fff;
+    position: relative;
 }
 .content4-title{
     width:276px;
@@ -1741,33 +1867,53 @@ input:focus{
     width:20px;
     height:24px;
     padding:12px 0;
+    color:transparent;
+    background-color: transparent;
     position: absolute;
     top:50%;
     left:0;
     margin-top:-20px;
 }
-.control-next{
+.main-box9-bottom .control-next{
     width:20px;
     height:24px;
     padding:12px 0;
+    color:transparent;
+    background-color: transparent;
     position: absolute;
     top:50%;
     right:0;
     margin-top:-20px;
 }
-.content1:hover .control-prev,.control-next{
+.content1:hover .control-prev{
     background-color: rgba(66,66,66,0.2);
     color:#fff;
 }
-.content2:hover .control-prev,.control-next{
+.content1:hover .control-next{
     background-color: rgba(66,66,66,0.2);
     color:#fff;
 }
-.content3:hover .control-prev,.control-next{
+.content2:hover .control-prev{
     background-color: rgba(66,66,66,0.2);
     color:#fff;
 }
-.content4:hover .control-prev,.control-next{
+.content2:hover .control-next{
+    background-color: rgba(66,66,66,0.2);
+    color:#fff;
+}
+.content3:hover .control-prev{
+    background-color: rgba(66,66,66,0.2);
+    color:#fff;
+}
+.content3:hover .control-next{
+    background-color: rgba(66,66,66,0.2);
+    color:#fff;
+}
+.content4:hover .control-prev{
+    background-color: rgba(66,66,66,0.2);
+    color:#fff;
+}
+.content4:hover .control-next{
     background-color: rgba(66,66,66,0.2);
     color:#fff;
 }
@@ -1908,9 +2054,10 @@ input:focus{
     top:136px;
     left:20px;
 }
-.main-box10-bottom1:hover .icon-bofang{
+.video-box:hover .icon-bofang{
     color: #ff6700;
 }
+
 .video i{
     width:24px;
     height:24px;
@@ -1920,9 +2067,7 @@ input:focus{
     top:136px;
     left:20px;
 }
-.video:hover .icon-bofang{
-    color: #ff6700;
-}
+
 .bottom-bottom{
     width:1226px;
     height:60px;
@@ -2120,6 +2265,15 @@ input:focus{
     border-top: none;
     padding-top:20px;
     box-sizing: border-box;
+}
+.bar-sort:hover{
+    cursor: pointer;
+}
+.bar-sort:hover i{
+    color:#ff6700;
+}
+.bar-sort:hover .bar-text{
+    color:#ff6700;
 }
 .bar-sort .iconfont{
     width: 30px;
